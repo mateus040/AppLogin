@@ -12,4 +12,33 @@
         </LinearGradientBrush>
     </ContentPage.Background>
 
+    <ContentPage.Content>
+        <StackLayout>
+            <Frame CornerRadius="10"
+                   x:Name="frm_login"
+                   
+                   HasShadow="False"
+                   VerticalOptions="CenterAndExpand">
+
+                <StackLayout>
+                    <Label Text="Login de Usuários"
+                           TextTransform="Uppercase"
+                           FontSize="Title"
+                           HorizontalTextAlignment="Center" />
+
+                    <Label Text="E-mail:" />
+                    <Entry x:Name="txt_email"
+                           TextColor="White"
+                           Placeholder="Seu email de cadastro" />
+
+                    <Label Text="Senha:" />
+                    <Entry x:Name="txt_senha" Placeholder="Sua Senha" IsPassword="True" />
+
+                    <Button Text="Entrar" Clicked="Button_Clicked" />
+                </StackLayout>
+            </Frame>
+                   
+        </StackLayout>
+    </ContentPage.Content>
+    
 </ContentPage>
